@@ -1,6 +1,9 @@
-# SSH client configuration to use the private key ~/.ssh/holberton
-# SSH client configuration to refuse to authenticate using a password
+# This is the ssh client system-wide configuration file.
+# This file provides defaults for users, and the values can be changed
+# in per-user configuration files or on the command line.
 
-Host 100.25.12.246
-     PasswordAuthentication no
-     IdentityFile ~/.ssh/school
+
+Host *
+	PasswordAuthentication no
+#   	HostbasedAuthentication no
+    	IdentityFile ~/.ssh/school
